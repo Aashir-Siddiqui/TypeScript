@@ -1,5 +1,5 @@
 "use strict";
-// number data type 
+// number type 
 let n = 10;
 n = 20;
 console.log(n);
@@ -25,7 +25,7 @@ let nanValue = NaN;
 if (isNaN(nanValue)) {
     console.log("value is NaN");
 }
-// string data type
+// string type
 let firstName = "Aashir ";
 let lastName = "Siddiqui";
 let fullName = firstName + lastName;
@@ -39,7 +39,7 @@ let str2 = "Hello";
 let str3 = "World";
 const isEqual = str2 === str3;
 console.log(isEqual);
-// Boolean data type 
+// Boolean type 
 let workDone = true;
 let myNameisAhmed = false;
 function isEven(a) {
@@ -50,3 +50,39 @@ function func(b) {
     return (b % 4 && b % 8) === 0;
 }
 console.log(func(16));
+// bigInt type 
+let maxNumber = Number.MAX_SAFE_INTEGER;
+console.log(maxNumber);
+let maxNum = 9007199254740993n;
+console.log(maxNum);
+let bigNumber = 900719925474099198n;
+let difference = maxNum - bigNumber;
+let add = maxNum + bigNumber;
+let product = maxNum * bigNumber;
+let division = maxNum / bigNumber;
+console.log(difference);
+console.log(add);
+console.log(product);
+console.log(division);
+// any type
+let x = "Aashir";
+x = 5;
+x = true;
+// unknown type 
+let c = "Aashir";
+c = 5;
+if (typeof c === "number") {
+    console.log(c + 5);
+}
+else if (typeof c === "string") {
+    console.log(c.toUpperCase());
+}
+else {
+    console.log(c);
+}
+// undefined type 
+let und = undefined;
+console.log(und);
+// null type 
+let nu = null;
+console.log(nu);
